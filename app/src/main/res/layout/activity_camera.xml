@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FFFFFF"
+    android:layout_height="match_parent"
+    tools:context=".CameraActivity" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/grey">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="right"
+            android:layout_marginRight="5dp"
+            android:layout_marginEnd="5dp"
+            tools:ignore="RtlHardcoded,UselessParent">
+            <TextView
+                android:id="@+id/camera_time"
+                android:gravity="center"
+
+                android:layout_width="90dp"
+                android:layout_height="30dp"
+                android:background="@drawable/bg_border_white"
+                android:textColor="#FFFFFF"
+                android:text="00:00:00"
+                android:layout_marginStart="5dp"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <SurfaceView
+        android:id="@+id/camera_surfaceview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp" />
+
+
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/camera_photo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:text="照片摄取"
+            android:layout_marginBottom="6dp"
+            android:background="@drawable/bg_border_white"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/camera_vedio"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="6dp"
+            android:layout_weight="1"
+            android:text="开始录制"
+            android:background="@drawable/bg_border_white"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</RelativeLayout>

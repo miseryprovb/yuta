@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey"
+    >
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="180dp"/>
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/emailRg"
+        android:layout_gravity="center"
+        android:layout_width="272dp"
+        android:textColorHint="@color/white"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/title"
+        android:layout_centerInParent="true"
+        android:background="@drawable/border_white"
+        android:layout_marginTop="140dp"
+        android:hint="请输入email"
+
+        android:maxLines="1" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/passwordRg"
+        android:layout_gravity="center"
+        android:textColorHint="@color/white"
+        android:layout_width="272dp"
+        android:background="@drawable/border_white"
+        android:layout_height="50dp"
+        android:layout_below="@+id/email"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:hint="请输入密码"
+        android:paddingLeft="15dp"
+        android:inputType="textPassword"
+        android:maxLines="1" />
+
+    <EditText
+        android:textColor="@color/white"
+        android:id="@+id/passwordRgAgain"
+        android:layout_gravity="center"
+        android:textColorHint="@color/white"
+        android:layout_width="272dp"
+        android:background="@drawable/border_white"
+        android:layout_height="50dp"
+        android:paddingLeft="15dp"
+        android:layout_below="@+id/email"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="15dp"
+        android:hint="请再次输入密码"
+        android:inputType="textPassword"
+
+        android:maxLines="1" />
+    <Button
+        android:layout_below = "@+id/password"
+        android:id="@+id/button_register"
+        android:layout_marginTop="15dp"
+        android:layout_width="272dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:background="@drawable/border_white"
+        android:text="注册"
+        />
+
+</LinearLayout>

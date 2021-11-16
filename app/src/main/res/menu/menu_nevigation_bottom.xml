@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_item_yuta"
+        android:enabled="true"
+        android:icon="@drawable/yuta_selector"
+        android:title="语Ta"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_item_dictionary"
+        android:enabled="true"
+        android:icon="@drawable/dictionary_selector"
+        android:title="字典"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_item_video"
+        android:enabled="true"
+        android:icon="@drawable/vedio_selector"
+        android:title="教学"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_item_short_video"
+        android:enabled="true"
+        android:icon="@drawable/short_vedio_selector"
+        android:title="短视频"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/menu_item_social"
+        android:enabled="true"
+        android:icon="@drawable/socialization_selector"
+        android:title="社交"
+        app:showAsAction="ifRoom" />
+</menu>
