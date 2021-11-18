@@ -27,7 +27,7 @@ public class Video extends Fragment {
         video = inflate.findViewById(R.id.VideoView1);
         MediaController mc = new MediaController(this.getContext());
         video.setMediaController(mc);
-        video.setVideoURI(Uri.parse("android.resource://edu.pku.canoe.yuta/" +R.raw.shortvideo1));
+        video.setVideoURI(Uri.parse("android.resource://edu.pku.canoe.yuta/" +R.raw.video));
         video.requestFocus();
         try{
             video.start();
@@ -38,6 +38,15 @@ public class Video extends Fragment {
         video.setOnCompletionListener(new OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
+            }
+        });
+        video.setOnPreparedListener(new MediaPlayer.OnPreparedListener() {
+
+            @Override
+            public void onPrepared(MediaPlayer mp) {
+                mp.setVolume(0f, 0f);
+                mp.start();
+//                        mVideoView.start();
             }
         });
         return inflate;

@@ -3,9 +3,27 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/drawable/bg_border_black.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/drawable/bg_border_white.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/drawable/border_white.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/drawable/button_border.xml" value="0.17916666666666667" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/drawable/search_out_activity.xml" value="0.19166666666666668" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/drawable/socialization_selector.xml" value="0.19166666666666668" />
         <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/activity_camera.xml" value="0.16302083333333334" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/activity_dictionary.xml" value="0.16302083333333334" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/activity_function.xml" value="0.16302083333333334" />
         <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/activity_login.xml" value="0.159375" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/activity_main.xml" value="0.17552083333333332" />
         <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/activity_register.xml" value="0.159375" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/activity_search_out_dictionary.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/activity_short_video.xml" value="0.4" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/activity_show.xml" value="0.17552083333333332" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/activity_video.xml" value="0.16302083333333334" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/dictionary_layout.xml" value="0.16302083333333334" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/short_video_item.xml" value="0.16302083333333334" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/video_watch_layout.xml" value="0.16302083333333334" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/video_watch_list_item.xml" value="0.16302083333333334" />
+        <entry key="..\:/AndroidApplicationProjects/yuta/app/src/main/res/layout/viewpager_test.xml" value="0.13269927536231885" />
       </map>
     </option>
   </component>

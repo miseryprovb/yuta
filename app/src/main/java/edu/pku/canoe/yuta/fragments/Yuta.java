@@ -28,8 +28,8 @@ public class Yuta extends Fragment {
         View inflate = inflater.inflate(R.layout.activity_camera, container, false);
         TextView timeTextView = inflate.findViewById(R.id.camera_time);
         timeTextView.setVisibility(View.VISIBLE);
-        Button photoButton = inflate.findViewById(R.id.camera_photo);
-        Button vedioButton = inflate.findViewById(R.id.camera_vedio);
+        final Button photoButton = inflate.findViewById(R.id.camera_photo);
+        final Button vedioButton = inflate.findViewById(R.id.camera_vedio);
         CameraActivity cameraActivity = new CameraActivity();
         CameraActivity.ButtonOnClickListener onClickListener = cameraActivity.onClickListener;
         photoButton.setOnClickListener(onClickListener);
@@ -50,7 +50,14 @@ public class Yuta extends Fragment {
         cameraActivity.setVedioButton(vedioButton);
         cameraActivity.initViews();
         cameraActivity.initCamera();
+        vedioButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(vedioButton.getText().toString().equals("停止录制")) {
 
+                }
+            }
+        });
         return inflate;
     }
 

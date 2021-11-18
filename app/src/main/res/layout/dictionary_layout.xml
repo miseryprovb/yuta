@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="#f0f0f0">
+    <TextView
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:text="手语字典"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:background="#fcfcfc"
+        android:id="@+id/dictionary_title"/>
+    <EditText
+        android:id="@+id/search_bar"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/bg_border_black"
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:layout_height="50dp"
+        android:hint="字/词/全屏/笔画数"
+        android:textSize="17dp"
+        android:textColor="#a2a2a2"
+        android:textColorHint="#a2a2a2"
+        android:imeOptions="actionSearch"
+        android:singleLine="true"
+        android:paddingLeft="15dp"/>
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="360dp"
+        android:layout_height="110dp"
+        android:background="#fcfcfc">
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/hand_icon"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:text="手语说明"
+                android:layout_marginTop="10dp"
+                android:textColor="#515151"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/classes_icon"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:text="分类词汇"
+                android:layout_marginTop="10dp"
+                android:textColor="#515151"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="18dp"/>
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/collection_icon"
+                android:layout_gravity="center"/>
+
+            <TextView
+                android:text="我的收藏"
+                android:layout_marginTop="10dp"
+                android:textColor="#515151"
+                android:layout_gravity="center"
+                android:layout_height="match_parent"
+                android:layout_width="wrap_content"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:background="#fcfcfc"
+        android:paddingTop="20dp"
+        android:textSize="20dp"
+        android:textColor="#515151"
+        android:text="每日一句: "/>
+    <TextView
+
+        android:layout_width="350dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingBottom="20dp"
+        android:background="#fcfcfc"
+        android:textColor="#515151"
+        android:paddingTop="15dp"
+        android:textSize="15dp"
+        android:text="人类的心灵需要理想甚于需要物质。——雨果 "/>
+
+</LinearLayout>

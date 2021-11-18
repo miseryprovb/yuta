@@ -6,6 +6,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
         tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -29,6 +30,8 @@
         <activity android:name="edu.pku.canoe.yuta.RegisterActivity" />
         <activity android:name="edu.pku.canoe.yuta.TestActivity" />
         <activity android:name="edu.pku.canoe.yuta.ShowActivity" />
+        <activity android:name="edu.pku.canoe.yuta.ShortVideoDemoActivity" />
+        <activity android:name=".Searchout" />
     </application>
 
 </manifest>
