@@ -16,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     private Button loginButton;
     private Button registerButton;
     private Button passengerButton;
-    private Button testButton;
 
 
     @Override
@@ -28,7 +27,6 @@ public class MainActivity extends AppCompatActivity {
         loginButton = findViewById(R.id.btn_Login);
         registerButton = findViewById(R.id.btn_Register);
         passengerButton = findViewById(R.id.btn_passenger_Login);
-        testButton = findViewById(R.id.test_button);
         ButtonAnimation.initButton(loginButton);
         loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -50,13 +48,6 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, ShowActivity.class);
-                startActivity(intent);
-            }
-        });
-        testButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, TestActivity.class);
                 startActivity(intent);
             }
         });

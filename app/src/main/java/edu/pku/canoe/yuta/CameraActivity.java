@@ -5,7 +5,11 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.Date;
 import java.util.List;
+import java.util.Timer;
+import java.util.TimerTask;
 
+import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.graphics.ImageFormat;
 import android.hardware.Camera;
 import android.hardware.Camera.PictureCallback;
@@ -172,6 +176,39 @@ public class CameraActivity extends Activity {
     }
 
     public class ButtonOnClickListener implements OnClickListener{
+        Dialog dialog;
+        ProgressDialog progressDialog;
+        public void showDialog(View v){
+            dialog = new Dialog(v.getContext());
+            dialog.setContentView(R.layout.translate_dialog_layout);
+            dialog.setCancelable(true);
+            dialog.setCanceledOnTouchOutside(true);
+            Button button = (Button) dialog.findViewById(R.id.dialog_button);
+            button.setOnClickListener(new OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    dialog.cancel();
+                }
+            });
+            progressDialog = new ProgressDialog(v.getContext());
+            progressDialog.setMessage("翻译中...");
+            progressDialog.show();
+
+            Timer timer = new Timer();
+            TimerTask timerTask = new TimerTask() {
+                @Override
+                public void run() {
+                    runOnUiThread(new Runnable() {
+                        @Override
+                        public void run() {
+                            progressDialog.cancel();
+                            dialog.show();
+                        }
+                    });
+                }
+            };
+            timer.schedule(timerTask, 2000);
+        }
 
         @Override
         public void onClick(View v) {
@@ -261,6 +298,7 @@ public class CameraActivity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
+                        showDialog(v);
                     }
                     break;
 
@@ -282,9 +320,6 @@ public class CameraActivity extends Activity {
                         }
                         isRecording = !isRecording;
                         Log.e(tag, "=====录制完成，已保存=====");
-                        Toast toastCenter = Toast.makeText(getApplicationContext(), "录制完成，已保存", Toast.LENGTH_SHORT);
-                        toastCenter.setGravity(Gravity.CENTER, 0, 0);
-                        toastCenter.show();
                         vedioButton.setText("开始录制");
                         try {
                             setCamera();
@@ -293,6 +328,7 @@ public class CameraActivity extends Activity {
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
+                        showDialog(v);
                     }
                     if (camera != null) {
                         camera.autoFocus(null);
@@ -305,6 +341,7 @@ public class CameraActivity extends Activity {
                             }
                         }); // 拍照
 
+                        showDialog(v);
                     }
                     break;
                 default:

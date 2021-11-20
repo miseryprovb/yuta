@@ -50,14 +50,6 @@ public class Yuta extends Fragment {
         cameraActivity.setVedioButton(vedioButton);
         cameraActivity.initViews();
         cameraActivity.initCamera();
-        vedioButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if(vedioButton.getText().toString().equals("停止录制")) {
-
-                }
-            }
-        });
         return inflate;
     }
 
